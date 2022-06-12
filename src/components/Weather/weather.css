@@ -1,0 +1,41 @@
+.weather {
+    border-radius: 5px;
+    border: 1px black;
+    border-color: black;
+    border-style: solid;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+/* .weather-in {
+    animation: fadeIn 1s;
+    
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+} */
