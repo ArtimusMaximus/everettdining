@@ -23,13 +23,13 @@ const Header = () => {
                     <div className='col s10 left-align' style={{zIndex: '-1'}}>    
                         <h1 style={{marginTop: '3%'}} className="fade-image">
                             {
-                                location.pathname === '/news1' ? user.state.news1.name 
-                                : location.pathname === '/news2' ? user.state.news2.name
-                                : location.pathname === '/news3' ? user.state.news3.name
-                                : location.pathname === '/news4' ? user.state.news4.name
-                                : location.pathname === '/news5' ? user.state.news5.name
+                                location.pathname === '/news1' ? user.props.news1.name 
+                                : location.pathname === '/news2' ? user.props.news2.name
+                                : location.pathname === '/news3' ? user.props.news3.name
+                                : location.pathname === '/news4' ? user.props.news4.name
+                                : location.pathname === '/news5' ? user.props.news5.name
                                 : location.pathname === '/' ? ''
-                                : user.state.localFood.name
+                                : user.props.localFood.name
                             }
                         </h1>
                     </div>

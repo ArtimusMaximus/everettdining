@@ -6,19 +6,20 @@ class News extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            newsFetch: this.props.news,
             news: [],
         }
     }    
 
     componentDidMount() {
-        const url = `https://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=bbea9f6cb61342b885010df53dffd4d6`;
+        // set state to be props incoming
+        const url = `https://newsapi.org/v2/${this.state.newsFetch.type}?${this.state.newsFetch.query}&apiKey=bbea9f6cb61342b885010df53dffd4d6`;
     
         fetch(url)
             .then((res) => {
                 return res.json()
             })
             .then((data) => {
-                // console.log(data);
                 this.setState({
                     news: data.articles
                 })
@@ -26,7 +27,13 @@ class News extends Component {
             .catch((err) => console.log(err))
     }
     
+    
+    
+    
     renderItems() {
+        
+        // console.log(this.state.newsFetch)
+        // console.log(this.props.news)
         return this.state.news.map((item) => (
             <React.Fragment key={item.url}>
 

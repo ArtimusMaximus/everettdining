@@ -1,4 +1,9 @@
 import React from "react";
+import { Link } from 'react-router-dom'
+
+const handleClick = () => <Link to="/news1" />
+    
+
 
 function NavBar() {
     return (
@@ -6,12 +11,12 @@ function NavBar() {
             <div className="nav-wrapper grey darken-4">
                 <div className="container">
                     <ul className="hide-on-med-and-down right">
-                        <li><a href="/news5">Apple News</a></li>
-                        <li><a href="/news4">Tesla News</a></li>
-                        <li><a href="/news3">Business Headlines</a></li>
-                        <li><a href="/news2">TechCrunch Headlines</a></li>
-                        <li><a href="/news1">Wall Street Journal Related</a></li>
-                        <li><a href="/localfood">Food in Everett</a></li>
+                        <li><Link to="/news5">Apple News</Link></li>
+                        <li><Link to="/news4">Tesla News</Link></li>
+                        <li><Link to="/news3">Business Headlines</Link></li>
+                        <li><Link to="/news2">TechCrunch Headlines</Link></li>
+                        <li><Link to="/news1">Wall Street Journal Related</Link></li>
+                        <li><Link to="/localfood">Food in Everett</Link></li>
                     </ul>
                 </div>
             </div>
